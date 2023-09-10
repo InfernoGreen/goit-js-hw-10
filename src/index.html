@@ -6,11 +6,19 @@
     <title>Homework 10</title>
   </head>
   <body>
-    <select class="breed-select"></select>
-    <p class="loader">Loading data, please wait...</p>
-    <p class="error">Oops! Something went wrong! Try reloading the page!</p>
-    <div class="cat-info"></div>
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+}
+#result {
+    margin-top: 15px;
+}
+    </style>
+    <h1>Поиск кота</h1>
+    <input type="text" id="breed" placeholder="Введите породу кота">
+    <button onclick="searchCat()">Поиск</button>
+    <div id="result"></div>
 
-    <script src="index.js" type="module"></script>
+    <script src="app.js" type="module"></script>
   </body>
 </html>
